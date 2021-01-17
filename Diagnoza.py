@@ -68,10 +68,10 @@ def Diagnoza(sciezka_obraz, sciezka_folder='roboczy'):
     #predykcja
     #print(test)
     Pr = model.predict(test)
-    print(Pr) # they are outputs of the sigmoid, interpreted as probabilities p(y = 1 | x)
-    import numpy as np
+    #print(Pr) # they are outputs of the sigmoid, interpreted as probabilities p(y = 1 | x)
+    #import numpy as np
     Pr = np.round(Pr).flatten()
-    print(Pr)
+    #print(Pr)
     #print(Pr.type)
     wynik = int(Pr[0])
     #1=czerniak
